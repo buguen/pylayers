@@ -337,11 +337,11 @@ void spadas_delete_recursive(spadas_tree_t *s, int code, void *key) {
 
 void spadas_delete(void *s, void *key, position_t *position) {
     spadas_t *spadas = (spadas_t *) s;
-    int code, x, y, z;
+    int code, x, y;
 
     x = (int) position->x / spadas->cell_width;
     y = (int) position->y / spadas->cell_width;
-    z = (int) position->z / spadas->cell_width;
+    //z = (int) position->z / spadas->cell_width;
     
     code = spadas_get_Zvalue_cache(spadas, x, y);
     spadas_delete_recursive(spadas->nodes, code, key);

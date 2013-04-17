@@ -28,20 +28,20 @@
 
 /* ************************************************** */
 /* ************************************************** */
-#define LOG_REPLAY
-//#define LOG_APPLICATION
+//#define LOG_REPLAY
+#define LOG_APPLICATION
 //#define LOG_ROUTING
 //#define LOG_MAC
-#define LOG_RADIO
+//#define LOG_RADIO
 //#define LOG_ANTENNA
-#define LOG_ENERGY
+//#define LOG_ENERGY
 //#define LOG_MOBILITY
 //#define LOG_MONITOR
 //#define LOG_PROPAGATION
 //#define LOG_INTERFERENCES
 //#define LOG_MODULATION
 //#define LOG_ENVIRONMENT
-//#define LOG_WORLDSENS
+#define LOG_WORLDSENS
 
 
 #endif //__options__

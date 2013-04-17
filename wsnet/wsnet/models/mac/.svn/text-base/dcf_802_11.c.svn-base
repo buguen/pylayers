@@ -255,7 +255,7 @@ int dcf_802_11_state_machine(call_t *c, void *args) {
     struct _dcf_802_11_rts_header *rts_header;
     struct _dcf_802_11_cts_header *cts_header;
     struct _dcf_802_11_data_header *data_header;
-    struct _dcf_802_11_ack_header *ack_header;
+    //  struct _dcf_802_11_ack_header *ack_header;
     uint64_t timeout;
     call_t c0 = {get_entity_bindings_down(c)->elts[0], c->node, c->entity};
     
@@ -463,7 +463,7 @@ int dcf_802_11_state_machine(call_t *c, void *args) {
         header->type = ACK_TYPE; 
         header->src = c->node;
         header->dst = nodedata->dst;
-        ack_header = (struct _dcf_802_11_ack_header *) (packet->data + sizeof(struct _dcf_802_11_header));
+        // ack_header = (struct _dcf_802_11_ack_header *) (packet->data + sizeof(struct _dcf_802_11_header));
         timeout =  packet->size * 8 * radio_get_Tb(&c0) + macMinSIFSPeriod;
         
         /* Send ack */
@@ -529,7 +529,7 @@ void rx(call_t *c, packet_t *packet) {
     struct _dcf_802_11_rts_header *rts_header;
     struct _dcf_802_11_cts_header *cts_header;
     struct _dcf_802_11_data_header *data_header;
-    struct _dcf_802_11_ack_header *ack_header;
+    // struct _dcf_802_11_ack_header *ack_header;
     array_t *up = get_entity_bindings_up(c);
     int i = up->size;
 
@@ -684,7 +684,7 @@ void rx(call_t *c, packet_t *packet) {
 
     case ACK_TYPE:
         /* Received ACK */
-        ack_header = (struct _dcf_802_11_ack_header *) (packet->data + sizeof(struct _dcf_802_11_header));
+        // ack_header = (struct _dcf_802_11_ack_header *) (packet->data + sizeof(struct _dcf_802_11_header));
         
         if (header->dst != c->node) {
             /* Packet not for us */

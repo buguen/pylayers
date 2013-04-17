@@ -255,14 +255,12 @@ int unsetnode(call_t *c) {
 int bootstrap(call_t *c) {
     struct nodedata *nodedata = get_node_private_data(c);
     call_t c0 = {get_entity_bindings_down(c)->elts[0], c->node, c->entity};
-    int nb_neigh = 0;
     
     /* Get mac header overhead */
     nodedata->overhead = GET_HEADER_SIZE(&c0);
 
     /* Find all the node's neighbors (i.e. the one in range) */
-    nb_neigh = find_neighbors(c);
-    PRINT_ROUTING("Node %d has %d neighbors\n", c->node, nb_neigh);
+    PRINT_ROUTING("Node %d has %d neighbors\n", c->node, find_neighbors(c));
         
     return 0;
 }

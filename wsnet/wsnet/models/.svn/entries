@@ -1,15 +1,15 @@
 10
 
 dir
-486
+488
 svn://scm.gforge.inria.fr/svn/wsnet/models
 svn://scm.gforge.inria.fr/svn/wsnet
 
 
 
-2011-07-28T21:50:56.560016Z
-486
-rkuntz
+2012-02-10T13:53:36.028356Z
+488
+afraboul
 
 
 
@@ -25,21 +25,6 @@ rkuntz
 
 
 99147f14-fc3e-0410-ab01-ad37c5f0aaba
-
-mac
-dir
-
-application
-dir
-
-propagation
-dir
-
-antenna
-dir
-
-environment
-dir
 
 monitor
 dir
@@ -59,7 +44,7 @@ file
 
 
 
-2011-10-17T19:17:37.970433Z
+2013-04-17T12:07:54.707532Z
 fe24671d8394a5878ee6bc38f79db348
 2008-02-19T11:04:35.472288Z
 348
@@ -97,5 +82,20 @@ noise
 dir
 
 radio
+dir
+
+mac
+dir
+
+application
+dir
+
+propagation
+dir
+
+antenna
+dir
+
+environment
 dir
 

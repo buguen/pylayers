@@ -1,7 +1,7 @@
 10
 
 dir
-486
+488
 svn://scm.gforge.inria.fr/svn/wsnet/user_models
 svn://scm.gforge.inria.fr/svn/wsnet
 
@@ -26,13 +26,47 @@ qlampin
 
 99147f14-fc3e-0410-ab01-ad37c5f0aaba
 
+bootstrap
+file
+
+
+
+
+2013-04-17T12:07:53.799532Z
+24b4578bf388992b62fcea107d0e66f2
+2009-11-16T17:37:19.700331Z
+450
+qlampin
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+275
+
 configure.ac
 file
 
 
 
 
-2011-10-17T19:17:31.774239Z
+2013-04-17T12:07:53.799532Z
 e0ba148d49e466ba16cc322874c9c52e
 2009-11-16T17:37:19.700331Z
 450
@@ -66,7 +100,7 @@ file
 
 
 
-2011-10-17T19:17:31.774239Z
+2013-04-17T12:07:53.799532Z
 d56ede475bc4bcc966a2fb25ef14fa84
 2009-11-16T17:37:19.700331Z
 450
@@ -93,38 +127,4 @@ qlampin
 
 
 230
-
-bootstrap
-file
-
-
-
-
-2011-10-17T19:17:31.774239Z
-24b4578bf388992b62fcea107d0e66f2
-2009-11-16T17:37:19.700331Z
-450
-qlampin
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-275
 

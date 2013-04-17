@@ -12,6 +12,7 @@
 #include "../../internals.h"
 
 #include <libraries/worldsens/wsens_srv.h>
+//#define DEBUG
 #include <include/worldsens_debug.h>
 
 
@@ -609,15 +610,15 @@ uint64_t scheduler_get_end(void) {
 void scheduler_stats(void) {
     struct rusage ru;
     uint64_t unanotime;
-    double speedup;
-    double i_speedup;
+    //    double speedup;
+    //    double i_speedup;
 
     getrusage(RUSAGE_SELF,&ru);
 #define NANO  (1000*1000*1000)
 #define MICRO (1000)
     unanotime = ((uint64_t) ru.ru_utime.tv_sec) * NANO + ((uint64_t) ru.ru_utime.tv_usec) * MICRO;
-    speedup = ((double) g_clock) / ((double) unanotime);
-    i_speedup = ((double) (g_clock - dbg.o_clock)) / ((double) (unanotime - dbg.o_unanotime));
+    // speedup = ((double) g_clock) / ((double) unanotime);
+    // i_speedup = ((double) (g_clock - dbg.o_clock)) / ((double) (unanotime - dbg.o_unanotime));
     dbg.o_clock = g_clock;
     dbg.o_unanotime = unanotime;
 

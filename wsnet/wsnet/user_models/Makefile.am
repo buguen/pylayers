@@ -1,9 +1,9 @@
 ACLOCAL_AMFLAGS=-I m4 
 
-lib_LTLIBRARIES = YOUR_LIBRARY_NAME.la
+lib_LTLIBRARIES = libpropagation_ban.la
 
-YOUR_LIBRARY_NAME_la_CFLAGS = $(CFLAGS) $(GLIB_FLAGS) $(GSL_FLAGS) -Wall
+libpropagation_ban_la_CFLAGS = $(CFLAGS) $(GLIB_FLAGS) $(GSL_FLAGS) -Wall
 
-YOUR_LIBRARY_NAME_la_SOURCES = YOUR_LIBRARY_SOURCES
+libpropagation_ban_la_SOURCES = ban-propag.c libcsv/libcsv.c
 
-YOUR_LIBRARY_NAME_la_LDFLAGS = -module
+libpropagation_ban_la_LDFLAGS = -module
