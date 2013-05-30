@@ -126,11 +126,7 @@ class Simul(SimulationRT):
         #self.L.loadGr(G1)
             print 'This is the first time your use this layout file.\
             Layout graphs are curently being built, it may take few minutes.'
-            self.L.buildGt()
-            self.L.buildGr()
-            self.L.buildGw()
-            self.L.buildGv()
-            self.L.buildGi()
+            self.L.build()     
             self.L.dumpw()
         x_offset = 0  # float(self.lay_opt['x_offset'])
         y_offset = 0  # float(self.lay_opt['y_offset'])
@@ -214,6 +210,7 @@ class Simul(SimulationRT):
 
         self.net = Network(EMS=self.EMS)
         self.gcom=Gcom(net=self.net,sim=self)
+
         self.create_agent()
         # create network
 
