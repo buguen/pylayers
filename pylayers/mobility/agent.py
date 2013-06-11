@@ -24,8 +24,9 @@ class Agent(object):
     def __init__(self, **args):
         """ Mobile Agent Init
 
-           Parameters
+           Attributes
            ----------
+
            'ID': string
                 agent ID
            'name': string

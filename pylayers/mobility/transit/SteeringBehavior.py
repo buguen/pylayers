@@ -4,8 +4,11 @@ This module is based on Steering Behaviors for Autonomous Characters
 created by Craig Reynolds and expanded upon by many.
 
     http://www.red3d.com/cwr/steer/
+
     http://www.red3d.com/cwr/papers/1999/gdc99steer.html
+
     http://opensteer.sourceforge.net/
+
     http://www.steeringbehaviors.de/
 
 """

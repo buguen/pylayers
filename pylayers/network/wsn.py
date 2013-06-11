@@ -4,6 +4,7 @@ import pdb
 
 def shortest_path_tree(G,nroot):
     """ create the shortest path tree
+
     Parameters
     ----------
     G : Graph 
@@ -18,8 +19,7 @@ def shortest_path_tree(G,nroot):
     return(SPT)
 
 def wsngraph():
-    """
-    return a weighted graph
+    """ return a weighted graph
     """
     G = nx.Graph()
     G.add_node(1)
