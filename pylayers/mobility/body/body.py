@@ -108,7 +108,7 @@ class BodyCylinder(object):
         s, p, f = c3d.read_c3d(filename)
         CM_TO_M = 0.01
         # self.d 3 x np x nf
-        # 
+        #
         self.d = np.ndarray(shape=(3, 15, np.shape(f)[0]))
         if self.d[2,:,:].max()>50:
             self.d = self.d*CM_TO_M
@@ -164,18 +164,18 @@ class BodyCylinder(object):
         fo.close()
 
 
-    def antennas(self, nc=10):
+    def cylinder(self, nc=10):
         """
 
         Parameters
         ----------
 
-        nc  : number of cylinders 
-    
+        nc  : number of cylinders
+
         Notes
         -----
-        
-        add a member data 
+
+        add a member data
         c : array(shape  =  (nc,8)), Cylinder Id , A coordinate, B Coordinate , cylinder radius
 
         """
@@ -369,7 +369,7 @@ def rotation(cycle, alpha=np.pi/2):
 
 
 def Global_Trajectory(cycle, traj):
-    """ 
+    """
 
     Parameters
     ----------

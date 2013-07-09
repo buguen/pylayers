@@ -1263,9 +1263,9 @@ def cylmap(Y):
     ----------
 
     X  : np.array
-        Nx3x3
+        Nx3
     Y
-        Nx3x3
+        Nx3
 
     Returns
     -------
@@ -1277,6 +1277,33 @@ def cylmap(Y):
 
     """
     X = np.array([[0,0,0],[0,0,-0.25],[0,0,0.25],[0.0625,0,0],[0,0.0625,0],[0.0625,0,0.25]]).T
+    B = Y[:,0][:,np.newaxis]
+    Yc = Y-B
+    pX = la.pinv(X)
+    A = np.dot(Yc,pX)
+    return(A,B)
+
+def affine(X,Y):
+    """
+
+    Parameters
+    ----------
+
+    X : nd.array
+    Y : nd.array
+
+    Returns
+    -------
+    (A,B)
+
+    Examples
+    ---------
+
+    >>> X = np.array([[0,0],[0,1]]).T
+    >>> Y = np.array([[5,5],[6,6]]).T
+    >>> A,B=affine(X,Y)
+
+    """
     B = Y[:,0][:,np.newaxis]
     Yc = Y-B
     pX = la.pinv(X)
